@@ -3,12 +3,12 @@ const navBar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul");
 
 function openMenu() {
-    sideMenu.style.transform = 'translateX(-16rem)';
+  document.getElementById("sideMenu").style.right = "0";
+}
+function closeMenu() {
+  document.getElementById("sideMenu").style.right = "-100%";
 }
 
-function closeMenu() {
-    sideMenu.style.transform = 'translateX(16rem)';
-}
 
 window.addEventListener('scroll', () => {
     if (scrollY > 50) {
